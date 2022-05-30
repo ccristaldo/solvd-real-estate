@@ -1,17 +1,14 @@
 package controller.apt;
 
-import controller.functionalInterfaces.Selector;
 import enums.Operation;
 import enums.Zones;
-import generics.apt.EnumAptGeneric;
 import model.apt.Apt;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import view.apt.AptMenu;
 
-import java.util.*;
-import java.util.function.Supplier;
+import java.util.Map;
+import java.util.Scanner;
 import java.util.stream.Collectors;
 
 public class AptController  {
@@ -31,22 +28,6 @@ public class AptController  {
             return zonesMap.get(index);
         }
     }
-/*
-   public Operation selectOperation(int index){
-
-       Map<Integer, Operation> operationMap = Operation.stream()
-               .collect(Collectors.toMap( value -> value.ordinal()+1, value -> value));
-       return operationMap.get(index);
-   }
-
-    public Zones selectZone(int index){
-
-        Map<Integer, Zones> zonesMap = Zones.stream()
-                .collect(Collectors.toMap( value -> value.ordinal()+1, value -> value));
-        return zonesMap.get(index);
-    }
-
- */
 
     public Apt loadApt(){
         String address;
@@ -99,7 +80,6 @@ public class AptController  {
         apt.setRooms(rooms);
         apt.setActive(true);
 
-        System.out.println(apt);
         return apt;
     }
 

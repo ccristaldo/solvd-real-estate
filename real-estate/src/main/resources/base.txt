@@ -1,0 +1,11 @@
+---- Apartment ----
+
+Operation (1):
+
+Customer (2):
+
+Location (3):
+
+Amount (4):
+
+Employee (5):

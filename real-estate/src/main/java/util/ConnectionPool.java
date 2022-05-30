@@ -1,4 +1,4 @@
-package connection;
+package util;
 
 import exceptions.ExceptionConnection;
 import org.apache.commons.dbcp2.BasicDataSource;

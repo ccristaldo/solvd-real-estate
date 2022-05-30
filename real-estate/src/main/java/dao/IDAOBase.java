@@ -6,6 +6,6 @@ public interface IDAOBase<T,K> {
     T getById(K id);
     List<T> getAll();
     void save(T o);
-    void update(T o);
+    void update(K id);
     void delete(K id);
 }

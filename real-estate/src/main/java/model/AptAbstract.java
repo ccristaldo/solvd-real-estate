@@ -1,11 +1,11 @@
-package model.apt;
+package model;
 
 import enums.Operation;
 import enums.Zones;
 
 import java.util.Objects;
 
-public class AptAbstract {
+public abstract class AptAbstract {
     private Zones zone;
     private Operation operation;
     private String address;

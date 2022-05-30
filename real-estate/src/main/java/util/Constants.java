@@ -1,4 +1,4 @@
-package connection;
+package util;
 
 public interface Constants {
 

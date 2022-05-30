@@ -22,7 +22,7 @@ public class MainMenu {
         final String option3 = "3. Customers (IN PROGRESS)";
         final String option4 = "4. Branches (IN PROGRESS)";
         final String option5 = "5. Transactions (IN PROGRESS)";
-        final String option6 = "6. Terminate Program (IN PROGRESS)";
+        final String option6 = "6. Terminate Program";
 
         try{
 

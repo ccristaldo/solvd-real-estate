@@ -36,11 +36,11 @@ public class AptMenu {
         boolean finish = false;
 
         final String option1 = "1. Register Apt";
-        final String option2 = "2. Get Apt by Id (IN PROGRESS)";
-        final String option3 = "3. Get all Apt (IN PROGRESS)";
+        final String option2 = "2. Get Apt by Id";
+        final String option3 = "3. Get all Apt";
         final String option4 = "4. Update Apt (IN PROGRESS)";
-        final String option5 = "5. Delete Apt (IN PROGRESS)";
-        final String option6 = "6. Go Back (IN PROGRESS)";
+        final String option5 = "5. Delete Apt (working)";
+        final String option6 = "6. Go Back";
 
         while (!finish) {
             try {
@@ -66,6 +66,23 @@ public class AptMenu {
                             break;
                         case 2:
                             LOGGER.log(Level.INFO, option2 + " selected\n");
+                            LOGGER.log(Level.INFO, "Enter Apt's ID: ");
+                            aptImplemented.getById(sn.nextInt());
+                            break;
+                        case 3:
+                            LOGGER.log(Level.INFO, option3 + " selected\n");
+                            aptImplemented.getAll();
+                            break;
+                        case 4:
+                            LOGGER.log(Level.INFO, option4 + " selected\n");
+                            LOGGER.log(Level.INFO, "Enter Apt's ID for Update: ");
+                            aptImplemented.update(sn.nextInt());
+                            break;
+
+                        case 5:
+                            LOGGER.log(Level.INFO, option5 + " selected\n");
+                            LOGGER.log(Level.INFO, "Enter Apt's ID for deletion: ");
+                            aptImplemented.delete(sn.nextInt());
                             break;
 
                         case 6:

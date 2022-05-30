@@ -8,7 +8,7 @@ public interface IAptService {
     void create(Apt a);
     void getById(int id);
     List<Apt> getAll();
-    void update(Apt a);
+    void update(int id);
     void delete(int id);
 }
 

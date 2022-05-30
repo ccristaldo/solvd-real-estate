@@ -2,10 +2,11 @@ package model.apt;
 
 import enums.Operation;
 import enums.Zones;
+import model.AptAbstract;
 
 import java.util.Objects;
 
-public class Apt extends AptAbstract{
+public class Apt extends AptAbstract {
 
     private double cost;
     private int dimension;
@@ -52,7 +53,7 @@ public class Apt extends AptAbstract{
         return id;
     }
 
-    public void setid(int id) {
+    public void setId(int id) {
         this.id = id;
     }
 

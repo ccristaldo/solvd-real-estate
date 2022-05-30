@@ -26,22 +26,26 @@ public class AptImplemented implements IAptService {
 
     @Override
     public void getById(int id) {
-
+        IDAOApt aptDAO = new AptDAOImplemented(conn);
+        aptDAO.getById(id);
 
     }
 
     @Override
     public List<Apt> getAll() {
-        return null;
+        IDAOApt aptDAO = new AptDAOImplemented(conn);
+        return aptDAO.getAll();
     }
 
     @Override
-    public void update(Apt a) {
-
+    public void update(int id) {
+        IDAOApt aptDAO = new AptDAOImplemented(conn);
+        aptDAO.update(id);
     }
 
     @Override
     public void delete(int id) {
-
+        IDAOApt aptDAO = new AptDAOImplemented(conn);
+        aptDAO.delete(id);
     }
 }
